@@ -9,11 +9,11 @@ const Login = () => {
   return (
     <div>
       <Routes>
-      </Routes>
         <Route path='/' element={<LoginForm />} />
-        <Route path='/' element={<LoginCreate />} /> 
-        <Route path='/' element={<LoginPasswordLost/>} /> 
-        <Route path='/' element={<LoginPasswordReset/>} /> 
+        <Route path='criar' element={<LoginCreate />} /> 
+        <Route path='perdeu' element={<LoginPasswordLost/>} /> 
+        <Route path='resetar' element={<LoginPasswordReset/>} /> 
+      </Routes>
     </div>
   )
 }
