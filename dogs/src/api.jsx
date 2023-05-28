@@ -5,8 +5,8 @@ export function TOKEN_POST(body) {
     url: API_URL + '/jwt-auth/v1/token',
     options: {
       method: 'POST',
-      Headers: {
-        'Content-Type': 'application/jason',
+      headers: {
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
     },
@@ -19,7 +19,7 @@ export function TOKEN_VALIDATE_POST(token) {
     options: {
       method: 'POST',
       headers: {
-        Autorization: 'Bearer ' + token,
+        Authorization: 'Bearer ' + token,
       },
     },
   };
@@ -31,12 +31,11 @@ export function USER_GET(token) {
     options: {
       method: 'GET',
       headers: {
-        Autorization: 'Bearer ' + token,
+        Authorization: 'Bearer ' + token,
       },
     },
   };
 }
-
 
 export function USER_POST(body) {
   return {
@@ -44,9 +43,9 @@ export function USER_POST(body) {
     options: {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/jason',
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     },
   };
 }
