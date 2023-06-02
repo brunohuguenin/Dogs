@@ -11,8 +11,7 @@ export  const UserStorage = ({ children }) => {
   const [error, setError] = React.useState(null);
   const navigate = useNavigate();
 
-  const userLogout = React.useCallback(
-    async function () {
+  const userLogout = React.useCallback(async function () {
       setData(null);
       setError(null);
       setLoading(false);
@@ -69,7 +68,7 @@ export  const UserStorage = ({ children }) => {
           setLoading(false);
         }
       } else {
-        setLoading(false);
+        setLogin(false);
       }
     }
     autoLogin();
