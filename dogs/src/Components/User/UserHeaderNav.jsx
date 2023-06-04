@@ -11,15 +11,13 @@ import UseMedia from '../../Hooks/UseMedia'
 const UserHeaderNav = () => {
   const {userLogout} = React.useContext(UserContext);
   const navigate = useNavigate();
-  const mobile = UseMedia('(max-width: 40rem)');
-  const [mobileMenu, setMobileMenu] = React.useState(false);
-
-
   function handleLogout() {
     userLogout();
     navigate('/login')
   }
 
+  const mobile = UseMedia('(max-width: 40rem)');
+  const [mobileMenu, setMobileMenu] = React.useState(false);
 
   const {pathname} = useLocation();
   React.useEffect(() => {
