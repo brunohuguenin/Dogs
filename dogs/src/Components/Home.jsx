@@ -5,8 +5,8 @@ import Loading from './Helper/Loading'
 const Home = () => {
   return (
     <section className={'conteiner mainConteiner'}>
-      <Loading />
-      {/* <Feed /> */}
+      {/* <Loading /> */}
+      <Feed />
     </section>
   )
 }
