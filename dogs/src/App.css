@@ -84,3 +84,12 @@ a {
     transform: initial;
   }
 }
+
+.App {
+  flex-direction: colum;
+  min-height: calc(100vh + 10rem);
+}
+
+.AppBody {
+  flex: 1;
+}
