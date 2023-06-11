@@ -30,7 +30,7 @@ const App = () => {
               <Route path='*' element={<Notfound/>}/>
             </Routes>
           </main>
-          <Footer />
+          {/* <Footer /> */}
         </UserStorage>
       </BrowserRouter>
   </div>
